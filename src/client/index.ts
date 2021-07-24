@@ -15,6 +15,8 @@ export class WerewolfClient {
 
     this.client.on("ready", this.ready);
     this.client.on("message", this.handleMessage);
+
+    this.setup();
   }
 
   handleMessage = (message: Message) => {
